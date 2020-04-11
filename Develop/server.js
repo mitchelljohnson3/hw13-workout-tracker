@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 // ------------------------------------------------------------------------------------------------------
 // mongoose init
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workoutTracker', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://root:password1@ds159776.mlab.com:59776/heroku_5ng9m1w7', { useNewUrlParser: true });
 
 const Workouts = require("./models/workout.js");
 const Exercises = require("./models/exercise.js");
